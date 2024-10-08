@@ -11,7 +11,6 @@
         <h1>Dashboard - Restaurante Delicioso</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
                 <li><a href="#about">Sobre Nosotros</a></li>
                 <li><a href="#menu">Menú</a></li>
                 <li><a href="#contact">Contacto</a></li>
@@ -19,19 +18,46 @@
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>Secciones Disponibles</h2>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <h2>Menú</h2>
             <ul>
-                <li><a href="index.html#about">Sobre Nosotros</a></li>
-                <li><a href="index.html#menu">Menú</a></li>
-                <li><a href="index.html#contact">Contacto</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
-        </section>
-    </main>
+        </aside>
+
+        <main class="main-content">
+            <section id="about" class="card">
+                <h2>Sobre Nosotros</h2>
+                <p>¡Descubre el mejor ceviche en Restaurante Delicioso!<br>
+                    Frescura, sabor auténtico y un ambiente acogedor te esperan 🦐<br>
+                    📍 Av. Amazonas N°592 🌊
+                </p>
+            </section>
+
+            <section id="menu" class="card">
+                <h2>Menú</h2>
+                <ul>
+                    <li>Plato 1 - $10</li>
+                    <li>Plato 2 - $12</li>
+                    <li>Plato 3 - $15</li>
+                </ul>
+            </section>
+
+            <section id="contact" class="card">
+                <h2>Contacto</h2>
+                <p>Email: <a href="mailto:contacto@restaurantdelicioso.com">contacto@restaurantdelicioso.com</a></p>
+                <p>Teléfono: <a href="tel:+1234567890">+123 456 7890</a></p>
+            </section>
+        </main>
+    </div>
 
     <footer>
         <p>&copy; 2024 Restaurante Delicioso</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
