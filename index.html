@@ -1,50 +1,35 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurante Delicioso</title>
+    <title>Restaurant Dashboard</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Restaurante Delicioso</h1>
-        <nav>
+    
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>Menu</h2>
             <ul>
-                <li><a href="#about">Sobre Nosotros</a></li>
-                <li><a href="#menu">Menú</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#" onclick="showEntradas()">Entradas</a></li>
+                <li><a href="#" onclick="showPlatoPrincipal()">Platos Principales</a></li>
+                <li><a href="#" onclick="showBebidas()">Bebidas</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
 
-    <section id="about">
-        <h2>Sobre Nosotros</h2>
-        <p>!Descubre el mejor ceviche en Nomade Restaurante¡<br>
-            Frescura, sabor autentico y un ambiente acogedor te esperan 🦐<br>
-            📍Av. Amazonas N°592🌊
-        </p>
-    </section>
-
-    <section id="menu">
-        <h2>Menú</h2>
-        <ul>
-            <li>Plato 1 - $10</li>
-            <li>Plato 2 - $12</li>
-            <li>Plato 3 - $15</li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contacto</h2>
-        <p>Email: contacto@restaurantdelicioso.com</p>
-        <p>Teléfono: +123 456 7890</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Restaurante Delicioso</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+        <!-- Main Content -->
+        <div class="content">
+            <h1>Bienvenido a Restaurante Nomade</h1>
+            <p>
+                Bienvenidos a Restaurante Nomade, un lugar donde el ceviche es la estrella. Nos especializamos en ofrecer ceviches frescos y llenos de sabor, preparados con el mejor pescado del día, como la corvina, marinado en jugo de limón, sal, pimienta, cilantro y un toque de ají amarillo, que le da ese sabor fresco, ácido y picante tan característico. En nuestro menú encontrarás una variedad de ceviches, desde el clásico hasta opciones innovadoras, siempre acompañados de lo mejor de los ingredientes peruanos, como camote, choclo y una salsa criolla que complementa perfectamente cada plato. ¡Ven a disfrutar de un pedazo del Perú con nosotros!Descubre los sabores auténticos de nuestra cocina.</p>
+            <div id="menu"></div>
+            <div class="recommendation">
+                <h2>¿No sabes qué elegir?</h2>
+                <button id="recommendButton">Recomendar un plato</button>
+                <div id="recommendationResult"></div>
+            </div>
+            
+        </div>
+    </div>
